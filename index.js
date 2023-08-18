@@ -24,9 +24,10 @@ const corsOptions = { //CORS es una política que impide que dominios no autoriz
             callback(new Error('No permitido por CORS'))
         }
     }
-} */
+} 
 
 app.use(cors(corsOptions));
+*/
 
 app.use('/api/veterinarios', veterinarioRouter);
 app.use('/api/pacientes', pacienteRouter);

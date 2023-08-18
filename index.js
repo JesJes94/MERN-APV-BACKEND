@@ -14,7 +14,7 @@ dotenv.config();
 
 conectarDB();
 
-const dominiosPermitidos = [process.env.FRONTEND_URL]; 
+/* const dominiosPermitidos = [process.env.FRONTEND_URL]; 
 
 const corsOptions = { //CORS es una política que impide que dominios no autorizados se conecten a la BD
     origin: function(origin, callback) {
@@ -24,7 +24,7 @@ const corsOptions = { //CORS es una política que impide que dominios no autoriz
             callback(new Error('No permitido por CORS'))
         }
     }
-}
+} */
 
 app.use(cors(corsOptions));
 
